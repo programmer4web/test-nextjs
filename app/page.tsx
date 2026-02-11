@@ -63,16 +63,22 @@ export default function Home() {
           <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-50">Demos:</h3>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] sm:w-auto"
+              className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-blue-600/[.2] px-5 transition-colors hover:border-transparent hover:bg-blue-600/[.1] dark:border-blue-400/[.2] dark:hover:bg-blue-400/[.1] sm:w-auto"
               href="/demo"
             >
-              Autocomplete (Client)
+              Client Component
             </a>
             <a
               className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-green-600/[.2] px-5 transition-colors hover:border-transparent hover:bg-green-600/[.1] dark:border-green-400/[.2] dark:hover:bg-green-400/[.1] sm:w-auto"
               href="/fruits"
             >
-              Catalog (Server) ⚡
+              Server Component
+            </a>
+            <a
+              className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-purple-600/[.2] px-5 transition-colors hover:border-transparent hover:bg-purple-600/[.1] dark:border-purple-400/[.2] dark:hover:bg-purple-400/[.1] sm:w-auto"
+              href="/fruits/interactive"
+            >
+              Server + Client ✨
             </a>
           </div>
         </div>
