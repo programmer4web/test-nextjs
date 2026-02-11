@@ -24,3 +24,16 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Autocomplete Pro Styling */
+#autocomplete-wrapper input {
+  color: #000000 !important;
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
+
+#autocomplete-wrapper [role="option"],
+#autocomplete-wrapper li {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
