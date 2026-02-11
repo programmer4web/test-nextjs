@@ -17,6 +17,18 @@ const sampleData = [
 export default function DemoReactAutocompletePro() {
   const [selectedItem, setSelectedItem] = useState<AutocompleteOption | null>(null);
 
+  const handleSearch = async (query: string): Promise<AutocompleteOption[]> => {
+    try {
+      const response = await fetch(`/api/fruits?q=${encodeURIComponent(query)}`);
+      if (!response.ok) throw new Error('Failed to fetch');
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error('Search error:', error);
+      return sampleData; // Fallback to static data on error
+    }
+  };
+
   return (
     <div className="w-full max-w-2xl mx-auto p-8">
       <div className="mb-8">
@@ -35,11 +47,12 @@ export default function DemoReactAutocompletePro() {
           </label>
           <div id="autocomplete-wrapper">
             <AutocompletePro
-              options={sampleData}
+              options={[]}
               value={selectedItem || undefined}
               onChange={(selected) => {
                 setSelectedItem(Array.isArray(selected) ? selected[0] : selected);
               }}
+              onSearch={handleSearch}
               placeholder="Type to search..."
               renderOption={(option) => (
                 <div className="flex justify-between items-center" style={{ paddingLeft: '12px', paddingRight: '12px' }}>
