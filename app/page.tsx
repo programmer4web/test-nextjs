@@ -60,7 +60,7 @@ export default function Home() {
           </a>
           </div>
           <div className="flex flex-col gap-4 text-base font-medium w-full">
-          <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-50">Demos:</h3>
+          <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-50">Next.js Demos:</h3>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
               className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-blue-600/[.2] px-5 transition-colors hover:border-transparent hover:bg-blue-600/[.1] dark:border-blue-400/[.2] dark:hover:bg-blue-400/[.1] sm:w-auto"
@@ -79,6 +79,16 @@ export default function Home() {
               href="/fruits/interactive"
             >
               Server + Client ✨
+            </a>
+          </div>
+
+          <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-50 mt-4">Component Examples:</h3>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a
+              className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-orange-600/[.2] px-5 transition-colors hover:border-transparent hover:bg-orange-600/[.1] dark:border-orange-400/[.2] dark:hover:bg-orange-400/[.1] sm:w-auto"
+              href="/demo/tabs"
+            >
+              Tabs (Conditional CSS)
             </a>
           </div>
         </div>
