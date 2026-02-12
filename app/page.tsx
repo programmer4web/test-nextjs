@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -61,35 +62,41 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-4 text-base font-medium w-full">
           <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-50">Next.js Demos:</h3>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a
-              className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-blue-600/[.2] px-5 transition-colors hover:border-transparent hover:bg-blue-600/[.1] dark:border-blue-400/[.2] dark:hover:bg-blue-400/[.1] sm:w-auto"
+          <div className="flex flex-col sm:flex-row flex-wrap gap-4">
+            <Link
+              className="flex h-12 w-full items-center justify-center whitespace-nowrap rounded-full border border-solid border-blue-600/[.2] px-5 transition-colors hover:border-transparent hover:bg-blue-600/[.1] dark:border-blue-400/[.2] dark:hover:bg-blue-400/[.1] sm:w-auto"
               href="/demo"
             >
               Client Component
-            </a>
-            <a
-              className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-green-600/[.2] px-5 transition-colors hover:border-transparent hover:bg-green-600/[.1] dark:border-green-400/[.2] dark:hover:bg-green-400/[.1] sm:w-auto"
+            </Link>
+            <Link
+              className="flex h-12 w-full items-center justify-center whitespace-nowrap rounded-full border border-solid border-green-600/[.2] px-5 transition-colors hover:border-transparent hover:bg-green-600/[.1] dark:border-green-400/[.2] dark:hover:bg-green-400/[.1] sm:w-auto"
               href="/fruits"
             >
               Server Component
-            </a>
-            <a
-              className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-purple-600/[.2] px-5 transition-colors hover:border-transparent hover:bg-purple-600/[.1] dark:border-purple-400/[.2] dark:hover:bg-purple-400/[.1] sm:w-auto"
+            </Link>
+            <Link
+              className="flex h-12 w-full items-center justify-center whitespace-nowrap rounded-full border border-solid border-purple-600/[.2] px-5 transition-colors hover:border-transparent hover:bg-purple-600/[.1] dark:border-purple-400/[.2] dark:hover:bg-purple-400/[.1] sm:w-auto"
               href="/fruits/interactive"
             >
-              Server + Client ✨
-            </a>
+              Server + Client
+            </Link>
+            <Link
+              className="flex h-12 w-full items-center justify-center whitespace-nowrap rounded-full border border-solid border-amber-600/[.2] px-5 transition-colors hover:border-transparent hover:bg-amber-600/[.1] dark:border-amber-400/[.2] dark:hover:bg-amber-400/[.1] sm:w-auto"
+              href="/fruits/add"
+            >
+              + Add Fruit
+            </Link>
           </div>
 
           <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-50 mt-4">Component Examples:</h3>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a
+            <Link
               className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-orange-600/[.2] px-5 transition-colors hover:border-transparent hover:bg-orange-600/[.1] dark:border-orange-400/[.2] dark:hover:bg-orange-400/[.1] sm:w-auto"
               href="/demo/tabs"
             >
               Tabs (Conditional CSS)
-            </a>
+            </Link>
           </div>
         </div>
       </main>

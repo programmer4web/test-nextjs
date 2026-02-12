@@ -1,7 +1,7 @@
 'use client';
 
-import { useEffect } from 'react';
-import { useFormState, useFormStatus } from 'react-dom';
+import { useActionState, useEffect } from 'react';
+import { useFormStatus } from 'react-dom';
 import { addFruit } from '@/app/actions/fruits';
 import { useRouter } from 'next/navigation';
 
@@ -14,7 +14,7 @@ const SubmitButton = () => {
 
 const AddFruitForm = () => {
     const router = useRouter();
-    const [ state, formAction ] = useFormState(addFruit, null);
+    const [ state, formAction ] = useActionState(addFruit, null);
 
     const handleSubmit = () => {
         if (state?.success) {
@@ -24,6 +24,22 @@ const AddFruitForm = () => {
 
     useEffect(handleSubmit, [state]);
 
-    return <form action={formAction} className="flex flex-col gap-4"></form>
+    return <form action={formAction} className="flex flex-col gap-4">
+        <div>
+            <label htmlFor="label" className="block text-sm font-medium text-zinc-700 mb-1">Fruit Name</label>
+            <input name="label" id="label" type="text" className="w-full px-4 py-2 border border-zinc-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required></input>
+        </div>
+        <div>
+            <label htmlFor="value" className="block text-sm font-medium text-zinc-700 mb-1">Value</label>
+            <input name="value" id="value" type="text"  className="w-full px-4 py-2 border border-zinc-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required></input>
+        </div>
+        <div>
+            <label htmlFor="category" className="block text-sm font-medium text-zinc-700 mb-1">Category</label>
+            <input name="category" id="category" type="text"  className="w-full px-4 py-2 border border-zinc-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required></input>
+        </div>
+        {state?.error && <p className='text-red-600 text-sm'>{state.error}</p>}
+        <SubmitButton />
+    </form>
 }
 
+export default AddFruitForm;

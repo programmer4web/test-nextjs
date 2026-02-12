@@ -4,7 +4,7 @@ import { revalidatePath } from 'next/cache';
 import fs from 'fs/promises';
 import path from 'path';
 
-const addFruit = async (formData: FormData) => {
+const addFruit = async (prevState: any, formData: FormData) => {
     const label = formData.get('label') as string;
     const value = formData.get('value') as string;
     const category = formData.get('category') as string;

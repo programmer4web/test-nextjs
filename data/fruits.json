@@ -1,22 +1,128 @@
 [
-  { "id": "1", "label": "Apple", "value": "apple", "category": "Fruits" },
-  { "id": "2", "label": "Banana", "value": "banana", "category": "Fruits" },
-  { "id": "3", "label": "Cherry", "value": "cherry", "category": "Fruits" },
-  { "id": "4", "label": "Carrot", "value": "carrot", "category": "Vegetables" },
-  { "id": "5", "label": "Broccoli", "value": "broccoli", "category": "Vegetables" },
-  { "id": "6", "label": "Cucumber", "value": "cucumber", "category": "Vegetables" },
-  { "id": "7", "label": "Avocado", "value": "avocado", "category": "Fruits" },
-  { "id": "8", "label": "Asparagus", "value": "asparagus", "category": "Vegetables" },
-  { "id": "9", "label": "Blueberry", "value": "blueberry", "category": "Fruits" },
-  { "id": "10", "label": "Strawberry", "value": "strawberry", "category": "Fruits" },
-  { "id": "11", "label": "Tomato", "value": "tomato", "category": "Vegetables" },
-  { "id": "12", "label": "Lettuce", "value": "lettuce", "category": "Vegetables" },
-  { "id": "13", "label": "Spinach", "value": "spinach", "category": "Vegetables" },
-  { "id": "14", "label": "Kale", "value": "kale", "category": "Vegetables" },
-  { "id": "15", "label": "Mango", "value": "mango", "category": "Fruits" },
-  { "id": "16", "label": "Pineapple", "value": "pineapple", "category": "Fruits" },
-  { "id": "17", "label": "Orange", "value": "orange", "category": "Fruits" },
-  { "id": "18", "label": "Grape", "value": "grape", "category": "Fruits" },
-  { "id": "19", "label": "Watermelon", "value": "watermelon", "category": "Fruits" },
-  { "id": "20", "label": "Bell Pepper", "value": "bell-pepper", "category": "Vegetables" }
+  {
+    "id": "1",
+    "label": "Apple",
+    "value": "apple",
+    "category": "Fruits"
+  },
+  {
+    "id": "2",
+    "label": "Banana",
+    "value": "banana",
+    "category": "Fruits"
+  },
+  {
+    "id": "3",
+    "label": "Cherry",
+    "value": "cherry",
+    "category": "Fruits"
+  },
+  {
+    "id": "4",
+    "label": "Carrot",
+    "value": "carrot",
+    "category": "Vegetables"
+  },
+  {
+    "id": "5",
+    "label": "Broccoli",
+    "value": "broccoli",
+    "category": "Vegetables"
+  },
+  {
+    "id": "6",
+    "label": "Cucumber",
+    "value": "cucumber",
+    "category": "Vegetables"
+  },
+  {
+    "id": "7",
+    "label": "Avocado",
+    "value": "avocado",
+    "category": "Fruits"
+  },
+  {
+    "id": "8",
+    "label": "Asparagus",
+    "value": "asparagus",
+    "category": "Vegetables"
+  },
+  {
+    "id": "9",
+    "label": "Blueberry",
+    "value": "blueberry",
+    "category": "Fruits"
+  },
+  {
+    "id": "10",
+    "label": "Strawberry",
+    "value": "strawberry",
+    "category": "Fruits"
+  },
+  {
+    "id": "11",
+    "label": "Tomato",
+    "value": "tomato",
+    "category": "Vegetables"
+  },
+  {
+    "id": "12",
+    "label": "Lettuce",
+    "value": "lettuce",
+    "category": "Vegetables"
+  },
+  {
+    "id": "13",
+    "label": "Spinach",
+    "value": "spinach",
+    "category": "Vegetables"
+  },
+  {
+    "id": "14",
+    "label": "Kale",
+    "value": "kale",
+    "category": "Vegetables"
+  },
+  {
+    "id": "15",
+    "label": "Mango",
+    "value": "mango",
+    "category": "Fruits"
+  },
+  {
+    "id": "16",
+    "label": "Pineapple",
+    "value": "pineapple",
+    "category": "Fruits"
+  },
+  {
+    "id": "17",
+    "label": "Orange",
+    "value": "orange",
+    "category": "Fruits"
+  },
+  {
+    "id": "18",
+    "label": "Grape",
+    "value": "grape",
+    "category": "Fruits"
+  },
+  {
+    "id": "19",
+    "label": "Watermelon",
+    "value": "watermelon",
+    "category": "Fruits"
+  },
+  {
+    "id": "20",
+    "label": "Bell Pepper",
+    "value": "bell-pepper",
+    "category": "Vegetables"
+  },
+  {
+    "id": "21",
+    "label": "Papaya",
+    "value": "papaya",
+    "category": "Fruits"
+  }
 ]
