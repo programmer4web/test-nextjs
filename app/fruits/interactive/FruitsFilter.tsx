@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 
 interface Fruit {
   id: string;
@@ -95,12 +96,12 @@ export default function FruitsFilter({ fruits }: FruitsFilterProps) {
       {/* Results Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {filteredFruits.map(fruit => (
+          <Link href={`/fruits/${fruit.id}`} key={fruit.id}>
           <div
-            key={fruit.id}
             className="bg-white dark:bg-zinc-900 p-6 rounded-lg border border-zinc-200 dark:border-zinc-800 hover:shadow-lg transition-shadow relative"
           >
             <button
-              onClick={() => toggleFavorite(fruit.id)}
+              onClick={(e) => { e.preventDefault(); toggleFavorite(fruit.id); }}
               className="absolute top-4 right-4 text-2xl hover:scale-110 transition-transform"
               aria-label="Toggle favorite"
             >
@@ -119,6 +120,7 @@ export default function FruitsFilter({ fruits }: FruitsFilterProps) {
               </p>
             </div>
           </div>
+          </Link>
         ))}
       </div>
 
