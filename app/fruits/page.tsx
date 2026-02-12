@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import fruitsData from '@/data/fruits.json';
 
 // Metadata for SEO (only works in Server Components)
@@ -59,8 +60,8 @@ export default async function FruitsPage() {
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {items.map((fruit) => (
+                <Link href={`/fruits/${fruit.id}`} key={fruit.id}>
                 <div
-                  key={fruit.id}
                   className="bg-white dark:bg-zinc-900 p-6 rounded-lg border border-zinc-200 dark:border-zinc-800 hover:shadow-lg transition-shadow"
                 >
                   <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-50 mb-2">
@@ -78,6 +79,7 @@ export default async function FruitsPage() {
                     </p>
                   </div>
                 </div>
+                </Link>
               ))}
             </div>
           </div>
